@@ -26,7 +26,7 @@ div {
     font-family: inherit; /* This ensures buttons inherit the font family from the body */
     background-color: #e36588;
     margin: 1vh;
-    font-size: 3vw; /* Use viewport width for font size */
+    font-size: 1.5vw; /* Use viewport width for font size */
     border: none;
     cursor: pointer;
     width: 20vw;
@@ -129,7 +129,10 @@ div {
     font-family: inherit;
 }
 .petBackground{
-    background-image: url('../WebEx1/assets/music.png');
+    background-image: url('../WebEx1/assets/bg.jpg');
+    background-size: contain; /* Set the background size to contain */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-position: center; /* Center the background image */
     width: 600px;
     height: 600px;
     text-align: center;
@@ -184,7 +187,7 @@ div {
     margin-top: 3vh;
 }
 
-.eggImg1{
+.eggImg{
     width: 9vw;
     height: auto;
     animation: shake 4.5s infinite;
