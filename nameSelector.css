@@ -1,0 +1,90 @@
+.petBackground {
+    background-image: url('../WebEx1/assets/bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.name-selector {
+    display: block;
+    width: 40vw;
+    height: 30vw;
+    padding: 1vh 3vw;
+}
+
+.name-display {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6vh;
+}
+
+.letter {
+    font-size: 2rem;
+    margin: 0 5px;
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #cb958e;
+}
+
+.alphabet-letter,
+.misc-grid span {
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 2px solid #000;
+    background-color: #cb958e;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.alphabet-letter:hover,
+.misc-grid span:hover {
+    background-color: #e36588;
+}
+
+.misc-grid {
+    margin-top: 3vh;
+}
+
+.eggImg {
+    width: 9vw;
+    height: auto;
+    animation: shake 4.5s infinite;
+    margin-bottom: 4vh;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .petBackground {
+        width: 100%;
+        height: auto;
+    }
+
+    .name-selector {
+        width: 80vw;
+        height: 60vw;
+    }
+
+    .letter {
+        font-size: 1.5rem;
+    }
+
+    .alphabet-letter,
+    .misc-grid span {
+        font-size: 1rem;
+    }
+
+    .eggImg {
+        width: 20vw;
+    }
+}
