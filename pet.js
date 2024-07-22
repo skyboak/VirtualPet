@@ -17,6 +17,11 @@ function createAlphabetGrid() {
     });
 }
 
+
+document.getElementById('confirmBtn').addEventListener('click', function() {
+    window.location.href = 'petScreen.html'; // Replace 'nextPage.html' with the URL of the page you want to navigate to
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     createAlphabetGrid();
     const letters = document.querySelectorAll(".alphabet-letter");

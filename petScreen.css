@@ -1,0 +1,61 @@
+#happyBar {
+    margin-bottom: 2vh;
+}
+.petBackground {
+    background-image: url('../WebEx1/assets/bg.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.eggImg {
+    width: 9vw;
+    height: auto;
+    animation: shake 4.5s infinite;
+    margin-bottom: 4vh;
+}
+
+.actionButtons{
+    display: block;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.actionButtons .graySquare{
+    margin-top: 5vh;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.graySquare {
+    width: 6vw; /* Adjust the size as needed */
+    height: 6vw; /* Adjust the size as needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency value as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue; /* Specify border style here */
+    border-radius: 10px;
+}
+
+.graySquare img {
+    max-width: 90%; /* Adjust based on your needs */
+    max-height: 90%; /* Adjust based on your needs */
+    object-fit: contain; /* This ensures the image scales properly within the square */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .petBackground {
+        width: 100%;
+        height: auto;
+    }
+    .eggImg {
+        width: 20vw;
+    }
+}

@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Screen</title>
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/nameSelector.css" />        
+    <link rel="stylesheet" href="/petScreen.css" />
 </head>
 <body>
+
     <div>
-        <h1 class="eggTitle">Take Good Care of Her/him</h1>
+        <div class="petBackground">
+            <div id="happyBar">Happiness:
+                <img class="happyImg" id="heart1" src="\assets\heartsFull.png" alt="My Image">
+                <img class="happyImg" id="heart2" src="\assets\heartsFull.png" alt="My Image">
+                <img class="happyImg" id="heart3" src="\assets\heartsFull.png" alt="My Image">
+                <img class="happyImg" id="heart4" src="\assets\heartsFull.png" alt="My Image">
+                <img class="happyImg" id="heart5" src="\assets\heartsFull.png" alt="My Image">
+            </div>
+            <div>
+                <div class="actionButtons">
+                    <div class="graySquare">
+                    <img src="\assets\clean1.png" alt="Descriptive Alt Text">
+                    </div>
+                    <div class="graySquare">
+                        <img src="\assets\clean2.png" alt="Descriptive Alt Text">
+                    </div>
+                    <div class="graySquare">
+                        <img src="\assets\clean1.png" alt="Descriptive Alt Text">
+                    </div>
+                </div>
+                <img class="eggImg" src="\assets\egg1.png" alt="My Image">
+                <div class="actionButtons">
+                    <div class="graySquare">
+                    <img src="\assets\clean2.png" alt="Descriptive Alt Text">
+                    </div>
+                    <div class="graySquare">
+                        <img src="\assets\clean1.png" alt="Descriptive Alt Text">
+                    </div>
+                    <div class="graySquare">
+                        <img src="\assets\clean2.png" alt="Descriptive Alt Text">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="petBackground">
-        <div class="name-selector">
-            <div class="name-display">
-                <span class="letter">_</span>
-                <span class="letter">_</span>
-                <span class="letter">_</span>
-                <span class="letter">_</span>
-                <span class="letter">_</span>
-                <span class="letter">_</span>
-            </div>
-            <img class="eggImg" src="\assets\egg1.png" alt="My Image">
-            <div class="alphabet-grid">
-            </div>
-            <div class="misc-grid">
-                <span class="letter">Delete</span>
-                <span class="letter">Confirm</span>
-            </div>
-        </div> 
-    </div>
-    <img class="musicBtn" src="\assets\music.png" alt="My Image">
-    <img class="infoBtn" src="\assets\info.png" alt="My Image">
-    <script type="module" src="./pet.js"></script>
 </body>
 </html>
