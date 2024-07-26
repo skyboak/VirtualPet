@@ -14,6 +14,7 @@
 }
 
 .eggImg {
+    position: sticky;
     width: 9vw;
     height: auto;
     animation: shake 4.5s infinite;
@@ -40,6 +41,15 @@
     align-items: center;
     border: 3px solid blue; /* Specify border style here */
     border-radius: 10px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Ensure transition applies for both directions */
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Initial scale */
+}
+
+.hidden {
+    opacity: 0; /* Fully transparent */
+    pointer-events: none; /* Prevent interaction while hidden */
+    transform: scale(0); /* Scale down */
 }
 
 .graySquare img {
